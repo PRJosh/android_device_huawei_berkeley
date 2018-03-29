@@ -17,16 +17,16 @@ $(call inherit-product, $(LOCAL_PATH)/pre-base.mk)
 $(call inherit-product-if-exists, vendor/google/gapps.mk)
 $(call inherit-product, $(LOCAL_PATH)/full_bkl.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common Slim stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-RR_BUILDTYPE = OpenKirin
+#RR_BUILDTYPE = OpenKirin
 
-PRODUCT_NAME := rr_bkl
+PRODUCT_NAME := slim_bkl
 PRODUCT_DEVICE := bkl
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Honor-View10
