@@ -2,7 +2,7 @@
 ro.cp_system_other_odex=0
 
 # Enable ADB authentication
-ro.adb.secure=1
+# ro.adb.secure=1
 
 # Disable FP nav by default
 sys.fpnav.enabled=0
@@ -10,7 +10,8 @@ sys.fpnav.enabled=0
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
-# Force ADB on
+# Force ADB on and insecure
 persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
