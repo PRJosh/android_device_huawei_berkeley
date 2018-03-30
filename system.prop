@@ -9,3 +9,8 @@ sys.fpnav.enabled=0
 
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
+
+# Force ADB on
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
